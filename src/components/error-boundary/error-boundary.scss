@@ -1,0 +1,34 @@
+.fallback-wrapper {
+    width: $fw;
+    height: $fh;
+
+    display: grid;
+    place-items: center;
+
+    .fallback-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .fallback-message {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        .fallback-reload-button {
+            padding: 0.5rem 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba($color-1E1E1E, 0.05);
+            }
+            
+        }
+    }
+}
