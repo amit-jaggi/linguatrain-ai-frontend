@@ -1,0 +1,43 @@
+.chat-input-container {
+  height: 80px;
+  padding: 16px 20px;
+  background: $color-FFFFFF;
+  border-top: 1px solid $color-DBEAFE;
+  display: flex;
+  gap: 12px;
+
+  input {
+    flex: 1;
+    border: 1px solid $color-CBD5E1;
+    border-radius: 12px;
+    padding: 0 16px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: border-color 0.3s ease-in-out;
+
+    &:focus {
+      border-color: $color-6F00FF;
+    }
+  }
+
+  .button {
+    width: 120px;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &.button-disabled {
+      background-color: rgba($color-000000, 0.075);
+      cursor: not-allowed;
+    }
+    
+    &.button-enabled {
+      background-color: $color-6F00FF;
+      color: $color-FFFFFF;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+
+.svg-wrapper {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0.2rem 0;
+
+    .bot {
+        transform: scale(1.2);
+    }
+    
+    .user {
+        transform: scale(1.8);
+
+        path {
+            fill: $color-6F00FF;
+        }
+    }
+
+    .system {
+        transform: scale(0.8);
+
+        path {
+            fill: rgba(77,77,77, 1);
+        }
+    }
+}
